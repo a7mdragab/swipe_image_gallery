@@ -174,14 +174,14 @@ class _InteractivePageState extends State<InteractivePage>
             bottom: -_dragPosition.dy,
             right: -_dragPosition.dx,
             child: GestureDetector(
-              onVerticalDragStart: _zoomed
-                  ? null
-                  : (_) {
-                      _translateToCenterController.reset();
-                    },
-              onVerticalDragUpdate:
-                  !_zoomed ? onVerticalDragUpdateHandler : null,
-              onVerticalDragEnd: !_zoomed ? onVerticalDragEndHandler : null,
+              // onVerticalDragStart: _zoomed
+              //     ? null
+              //     : (_) {
+              //         _translateToCenterController.reset();
+              //       },
+              // onVerticalDragUpdate:
+              //     !_zoomed ? onVerticalDragUpdateHandler : null,
+              // onVerticalDragEnd: !_zoomed ? onVerticalDragEndHandler : null,
               onDoubleTapDown: doubleTapDownHandler,
               onDoubleTap: onDoubleTap,
               child: InteractiveViewer(
